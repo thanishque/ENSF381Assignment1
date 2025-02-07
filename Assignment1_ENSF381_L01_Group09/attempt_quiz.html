@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS - Quiz</title>
+    <style>
+        .question label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+   <header>
+        <img src="logo.jpg" alt="LMS Logo" style="width:110px; height:110px;">
+        <h1>LMS - Quiz</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="leaderboard.html">Leaderboard</a>
+    </nav>
+
+    <main>
+        <img src="banner.jpg" alt="Banner Image" width="100%" height="auto">
+        <h2>Course Code: CS101 | Course Name: Introduction to Programming</h2>
+
+        <div class="quiz-details">
+            <p><strong>Topic of Quiz:</strong> Programming Fundamentals</p>
+            <p><strong>Deadline:</strong> March 1, 2025</p>
+            <p><strong>Attempts Allowed:</strong> 3</p>
+        </div>
+
+        <div class="question">
+            <p><strong>1. Is this a multiple choice question?</strong></p>
+            <label><input type="radio" name="q1" value="a"> A. Yes</label>
+            <label><input type="radio" name="q1" value="b"> B. No</label>
+            <label><input type="radio" name="q1" value="c"> C. Error</label>
+            <button class="submit-btn">Submit Answer</button>
+        </div>
+
+        <div class="question">
+            <p><strong>2. Which of the following are programming languages?</strong></p>
+            <label><input type="checkbox" name="q2" value="python"> Python</label>
+            <label><input type="checkbox" name="q2" value="html"> HTML</label>
+            <label><input type="checkbox" name="q2" value="css"> CSS</label>
+            <label><input type="checkbox" name="q2" value="javascript"> JavaScript</label>
+            <button class="submit-btn">Submit Answer</button>
+        </div>
+
+        <button class="submit-btn" onclick="window.location.href='leaderboard.html';">Finish Quiz</button>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Learning Management System</p>
+    </footer>
+
+</body>
+
+</html>
