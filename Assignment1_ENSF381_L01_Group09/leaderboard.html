@@ -2,119 +2,87 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LMS - Leaderboard</title>
-    <style>
-        .gold {
-            background-color: gold;
-        }
-        .silver {
-            background-color: silver; 
-        }
-        .bronze {
-            background-color: #cd7f32; 
-        }
-
-        .profile-pic {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .row-odd {
-            background-color: #ffffff; /* white */
-        }
-
-        .row-even {
-            background-color: #D3D3D3; /* light gray */
-        }
-
-    </style>
+    <title>Leaderboard - LMS</title>
 </head>
-
 <body>
-
     <header>
-        <img src="logo.jpg" alt="LMS Logo" style="width:110px; height:110px;">
-        <h1>LMS - Leaderboard</h1>
+        <img src="logo.jpg" alt="LMS Logo" width="100px" height="100px">
+        <h1>LMS - Learning Management Systems</h1>
     </header>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="course_view.html">Take Quiz</a>
+        <a href="index.html">Homepage</a>
+        <td>|</td>
+        <a href="course_view.html">Courses</a>
     </nav>
+    <br><br>
 
     <main>
-        <table>
-            <thead>
-                <tr>
-                    <th colspan="5">Leaderboard</th>
-                </tr>
-                <tr>
-                    <th>Rank</th>
-                    <th>Profile Picture</th>
-                    <th>Name</th>
-                    <th>Total Score</th>
-                    <th>Course</th>
-                </tr>
-            </thead>
+        <table style="width: 100%; height: 5%;">
+            <tr>
+                <td style="text-align: center; font-size: 50; background: green; color: white;"  colspan="5"><b>Leaderboard</b></td>
+            </tr>
+            <tr style="text-align:center; font-size: 30;">
+                <th><b>Rank</b></th>
+                <th><b>Profile Picture</b></th>
+                <th><b>Name</b></th>
+                <th><b>Total Score</b></th>
+                <th><b>Course</b></th>
+            </tr>
+
             <tbody>
 
-                <tr class="row-odd">
-                    <td class="rank gold">1</td>
-                    <td><img src="student.png" alt="Profile Picture" class="profile-pic"></td>
+                <tr style="text-align: center; background: gold">
+                    <td>1</td>
+                    <td><img height = 50px; width = 50px; src="student.png" alt="Profile Picture"></td>
                     <td>John Doe</td>
                     <td>95</td>
-                    <td>Introduction to Programming</td>
-                </tr>
-
-                <tr class="row-even">
-                    <td class="rank silver">2</td>
-                    <td><img src="student.png" alt="Profile Picture" class="profile-pic"></td>
-                    <td>Jane Smith</td>
-                    <td>92</td>
-                    <td>Data Structures</td>
-                </tr>
-
-                <tr class="row-odd">
-                    <td class="rank silver">2</td>
-                    <td><img src="student.png" alt="Profile Picture" class="profile-pic"></td>
-                    <td>Emily Johnson</td>
-                    <td>92</td>
                     <td>Web Development</td>
                 </tr>
 
-                <tr class="row-even">
-                    <td class="rank bronze">3</td>
-                    <td><img src="student.png" alt="Profile Picture" class="profile-pic"></td>
-                    <td>Mark Lee</td>
-                    <td>89</td>
-                    <td>Database Management</td>
+                <tr style="text-align: center; background: silver" >
+                    <td rowspan="2">2</td>
+                    <td><img height = 50px; width = 50px; src="student.png" alt="Profile Picture"></td>
+                    <td>Jane Smith</td>
+                    <td>90</td>
+                    <td>Data Structures</td>
+                </tr>
+                <tr style="text-align: center; background: silver">
+                    <td><img height = 50px; width = 50px; src="student.png" alt="Profile Picture" ></td>
+                    <td>Emily White</td>
+                    <td>90</td>
+                    <td>Algorithms</td>
                 </tr>
 
-                <tr class="row-odd">
-                    <td class="rank">4</td>
-                    <td><img src="student.png" alt="Profile Picture" class="profile-pic"></td>
-                    <td>Alice Brown</td>
+                <tr style="text-align: center; background: #A97142">
+                    <td>3</td>
+                    <td><img height = 50px; width = 50px; src="student.png" alt="Profile Picture"></td>
+                    <td>Michael Brown</td>
                     <td>85</td>
-                    <td>Computer Networks</td>
+                    <td>Machine Learning</td>
                 </tr>
 
-                <tr class="row-even">
-                    <td class="rank">5</td>
-                    <td><img src="student.png" alt="Profile Picture" class="profile-pic"></td>
-                    <td>Michael White</td>
+                <tr style="text-align: center;">
+                    <td>4</td>
+                    <td><img height = 50px; width = 50px; src="student.png" alt="Profile Picture"></td>
+                    <td>Sarah Johnson</td>
                     <td>80</td>
-                    <td>Operating Systems</td>
+                    <td>Networking</td>
+                </tr>
+
+                <tr style="text-align: center; background: #D3D3D3" >
+                    <td>5</td>
+                    <td><img height = 50px; width = 50px; src="student.png" alt="Profile Picture"></td>
+                    <td>Michael White</td>
+                    <td>75</td>
+                    <td>Networking</td>
                 </tr>
             </tbody>
         </table>
     </main>
 
     <footer>
-        <p>&copy; 2025 Learning Management System</p>
+        <p>&copy; 2025 LMS. All rights reserved.</p>
     </footer>
 
 </body>

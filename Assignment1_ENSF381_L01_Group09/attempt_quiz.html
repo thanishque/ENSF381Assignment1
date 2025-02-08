@@ -3,55 +3,58 @@
 <head>
     <title>LMS - Attempt Quiz</title>
 </head>
-
+ <header>
+        <img src="logo.jpg" alt="LMS Logo" width="100px" height="100px">
+        <h1>LMS - Learning Management System</h1>
+        <h2>LMS - Attempt Quiz</h2>
+    </header>
 <body>
 
-   <header>
-        <img src="logo.jpg" alt="LMS Logo" style="width:110px; height:110px;">
-
-        <h2>LMS - Quiz Attempt</h2>
-    </header>
-
     <nav>
-        <a href="index.html">Homepage</a>   |
-        <a href="leaderboard.html">Courses</a> 
+        <td><a href="index.html">Homepage</a></td>
+        <td>|</td>
+        <td><a href="leaderboard.html">Courses</a></td>
     </nav>
 
+    <br><br>
+
     <main>
-        <img src="banner.jpg" alt="Banner Image" width="100%" height="auto">
-        <h2>Course Code: CS101 | Course Name: Introduction to Programming</h2>
-
-        <div class="quiz-details">
-            <p><strong>Topic of Quiz:</strong> Programming Fundamentals</p>
-            <p><strong>Deadline:</strong> March 1, 2025</p>
-            <p><strong>Attempts Allowed:</strong> 3</p>
+        <div>
+            <img src="banner.jpg" alt="Quiz Banner Image" width="100%">
+            <h2>Course Name: Web Development</h2>
+            <h2>Course Code: WD381</h2>
         </div>
 
-        <div class="question">
-            <p><strong>1. Is this a multiple choice question?</strong></p>
-            <label><input type="radio" name="q1" value="a"> A. Yes</label>
-            <label><input type="radio" name="q1" value="b"> B. No</label>
-            <label><input type="radio" name="q1" value="c"> C. Error</label>
-            <button class="submit-btn">Submit Answer</button>
+        <div>
+            <p>Topic: HTML Basics</p>
+            <p>Deadline: 11:59 PM, February 10, 2025</p>
+            <p>Attempts Allowed: 1</p>
         </div>
 
-        <div class="question">
-            <p><strong>2. Which of the following are programming languages?</strong></p>
-            <label><input type="checkbox" name="q2" value="python"> Python</label>
-            <label><input type="checkbox" name="q2" value="html"> HTML</label>
-            <label><input type="checkbox" name="q2" value="css"> CSS</label>
-            <label><input type="checkbox" name="q2" value="javascript"> JavaScript</label>
-            <button class="submit-btn">Submit Answer</button>
+        <div>
+            <h3>Question 1</h3>
+            <p>What does HTML stand for?</p>
+            <div><label><input type="radio" name="q1"> HyperText Markup Language</label></div>
+            <div><label><input type="radio" name="q1"> HomeTool Markup Language</label></div>
+            <div><button>Submit Answer</button></div>
         </div>
 
-        <button class="submit-btn" onclick="window.location.href='leaderboard.html';">Finish Quiz</button>
-
+        <div>
+            <h3>Question 2</h3>
+            <p>Which of the following are HTML elements?</p>
+            <div><input type="checkbox" name="q2" value="option1">&lt;div&gt;</label></div><label>
+            <div><label><input type="checkbox" name="q2" value="option2">&lt;span&gt;</label></div>
+            <div><button class="submit-btn">Submit Answer</button></div>
+        </div>
+        <br>
+        <div><button onclick="window.location.href='leaderboard.html';">Finish Quiz</button></div>
+       
     </main>
 
+    <br><br>
+
     <footer>
-        <p>&copy; 2025 Learning Management System</p>
+        <p>&copy; 2025 LMS. All rights reserved</p>
     </footer>
-
 </body>
-
 </html>
